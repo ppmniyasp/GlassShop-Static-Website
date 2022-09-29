@@ -11,6 +11,22 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
+/*===== SCROLL NAV ANIMATION =====*/
+
+function changeBg(){
+    var navbar =document.getElementById('navbar')
+    var scrollValue = window.scrollY;
+    if(scrollValue < 20){
+        navbar.classList.remove('bgcolor');
+
+    } else{
+        navbar.classList.add('bgcolor');
+    }
+}
+
+window.addEventListener('scroll',changeBg);
+
+
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -54,3 +70,4 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
