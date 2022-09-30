@@ -8,3 +8,4 @@ Don't forget to join the channel for more videos like this.
 
 ![preview img](/preview.png)
 https://www.fuso.in/#
+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
